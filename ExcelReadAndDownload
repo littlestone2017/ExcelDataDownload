@@ -44,7 +44,7 @@ public class ExcelReadAndDownload {
                     }
                     //output file location
                     downImages("D:\\folderName\\folderName", url, picName);
-                    System.out.println("下载完毕");
+                    System.out.println("Download successfully");
                 }
                 System.out.println("======================COMPELTE DOWNLOADING===========================");
                 fileIPS.close();
@@ -60,7 +60,7 @@ public class ExcelReadAndDownload {
         InputStream inStream;
         try {
             URL url = new URL(imgUrl);//  construct a URL
-            URLConnection con = url.openConnection();// 打开连接
+            URLConnection con = url.openConnection();// open url
             inStream = con.getInputStream();
             ByteArrayOutputStream outStream = new ByteArrayOutputStream();//put photo data into output stream
             byte[] buf = new byte[1024];
